@@ -18,9 +18,7 @@ namespace SalesWebMvc.Data
 
         public void Seed()
         {
-            if (_context.Department.Any() ||
-                _context.Seller.Any() ||
-                _context.SalesRecords.Any())
+            if (_context.Department.Any() || _context.Seller.Any() || _context.SalesRecords.Any())
             {
                 return; // DB has been seeded
             }
